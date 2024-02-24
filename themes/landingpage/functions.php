@@ -11,7 +11,7 @@ function child_enqueue_styles()
 {
 	// Styles
 	wp_enqueue_style('child-main-style-bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', array(), CHILD_VERSION, 'all');
-	wp_enqueue_style('child-main-style', get_stylesheet_directory_uri() . '/styles/raw/style.css', array('child-main-style-bootstrap'), CHILD_VERSION, 'all');
+	wp_enqueue_style('child-main-style', get_stylesheet_directory_uri() . '/styles/cleaned/style.css', array('child-main-style-bootstrap'), CHILD_VERSION, 'all');
 	// FontAwesome
 	wp_register_style('Font_Awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 	wp_enqueue_style('Font_Awesome');
