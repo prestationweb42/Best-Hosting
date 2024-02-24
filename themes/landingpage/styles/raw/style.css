@@ -11852,6 +11852,17 @@ textarea.form-control-lg {
   height: 40px;
 }
 
+.legal__menu__footer {
+  list-style-type: none;
+  padding-inline-start: 1rem;
+  margin-block-end: 0;
+}
+.legal__menu__footer li a {
+  color: #f8f9fa;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 video {
   object-fit: cover;
 }
