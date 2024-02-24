@@ -1,0 +1,30 @@
+// Custom Palette
+$lightGray: #e6e6e6;
+$darkGray: #3c3c3c;
+$lightGreen: #80ee7e;
+$fontColorDark: #111;
+$fontColorLight: #eee;
+$colorRed: #a80000;
+$colorOrange: #ff8d29;
+
+// Ajoute les custom colors à la palette Bootstrap
+$custom-palette-colors: (
+    "lightGray": $lightGray,
+    "darkGray": $darkGray,
+    "lightGreen": $lightGreen,
+    "fontColorDark": $fontColorDark,
+    "fontColorLight": $fontColorLight,
+    "colorRed": $colorRed,
+    "colorOrange": $colorOrange,
+);
+$theme-colors: map.merge($custom-palette-colors, $theme-colors);
+
+// Cette boucle va rajouter cette nouvelle palette de couleurs au text et bg
+@each $key, $val in $custom-palette-colors {
+    .bg-#{$key} {
+        background-color: $val;
+    }
+    .text-#{$key} {
+        color: $val;
+    }
+}

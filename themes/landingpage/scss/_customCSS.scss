@@ -1,0 +1,34 @@
+// Custom CSS
+body {
+    background-color: $lightGray;
+}
+
+// Custom Card Project
+.card_project {
+    min-height: 530px !important;
+}
+// Custom Card Pricing
+#pricing {
+    .card_pricing {
+        min-height: 500px !important;
+    }
+    .card_pro {
+        background-color: #2c7e1b;
+    }
+    .card_expert {
+        background-color: #d1cd28;
+    }
+    ul {
+        list-style-type: none;
+    }
+}
+// Custom Parallax Section
+#parallax {
+    width: 100%;
+    min-height: 40vh;
+    background: url("../../assets/parallax.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,5 @@
+Pour démarrer SASS :
+npm run sass
+
+Pour stopper :
+ctrl + c
