@@ -31,24 +31,19 @@
                 <ul class="list-unstyled mb-0">
                     <li class="d-flex justify-content-center justify-content-md-start align-items-center">
                         <!-- Facebook -->
-                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://facebook.com" role="button"
-                            data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://facebook.com" role="button" data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-facebook"></i></a>
                         <span>Facebook</span>
                     </li>
                     <li class="d-flex justify-content-center justify-content-md-start align-items-center">
-                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://twitter.com" role="button"
-                            data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://twitter.com" role="button" data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-twitter"></i></a>
                         <span>Twitter</span>
                     </li>
                     <li class="d-flex justify-content-center justify-content-md-start align-items-center">
-                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://instagram.com"
-                            role="button" data-mdb-ripple-color="dark" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://instagram.com" role="button" data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-instagram"></i></a>
                         <span>Instagram</span>
                     </li>
                     <li class="d-flex justify-content-center justify-content-md-start align-items-center">
-                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://linkedin.com" role="button"
-                            data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-light" href="https://linkedin.com" role="button" data-mdb-ripple-color="dark" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <span>Linkedin</span>
                     </li>
                 </ul>
@@ -76,10 +71,16 @@
         <p class="mb-0 text-uppercase">
             ©&nbsp;<span id="year" class="ms-1 me-2"></span>Copyright
         </p>
-        <a class="text-light text-decoration-none ms-sm-0 ms-md-3" href="https://daniel-ventura.com"
-            target="_blank">dan-vent</a>
-        <a class="mb-0 text-uppercase text-light text-decoration-none ms-sm-0 ms-md-3" href="#">Privacy
-            Policy</a>
+        <a class="text-light text-decoration-none ms-sm-0 ms-md-3" href="https://daniel-ventura.com" target="_blank">dan-vent</a>
+        <?php
+        wp_nav_menu(
+            array(
+                'theme_location' => 'legal', // doit correspondre avec le menu dans functions.php
+                'container' => 'ul', // afin d'éviter d'avoir une div autour 
+                'menu_class' => 'legal__menu__footer', // ma classe personnalisée 
+            )
+        );
+        ?>
         <p class="mb-0 text-uppercase ms-sm-0 ms-md-3">All Right reserved</p>
     </div>
     <!-- Copyright -->
