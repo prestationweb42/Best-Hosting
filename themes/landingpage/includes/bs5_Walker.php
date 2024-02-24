@@ -101,4 +101,5 @@ class bs5_Walker extends Walker_Nav_menu
 register_nav_menus(array(
     'primary' => 'principal',
     'secondary' => 'footer',
+    'legal' => 'legal',
 ));
